@@ -1,0 +1,15 @@
+.container {
+  padding: 2rem;
+  background-color: #f4f6f8;
+  border-radius: 8px;
+}
+
+.title {
+  color: #8e44ad;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.text {
+  font-size: 1rem;
+}
