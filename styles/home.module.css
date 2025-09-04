@@ -1,13 +1,51 @@
 .container {
-  text-align: center;
+  text-align: left;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  color: #c14e15;
 }
 
-.title {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.title span {
+  font-weight: 700;
 }
 
 .text {
   font-size: 1.2rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.subtitle span {
+  color: #c14e15;
+}
+
+.contactNumber {
+  margin-bottom: 24pxpx;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.orangeBoldText {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #c14e15;
+}
+
+.orangeText {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #c14e15;
 }
