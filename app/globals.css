@@ -6,21 +6,27 @@
   --dark-fg: #ededed;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 /* Classe principale à appliquer au body */
-.bodyLight {
+.body {
+  display: flex;
+  flex-direction: column;
   background: var(--light-bg);
   color: var(--light-fg);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.bodyDark {
-  background: var(--dark-bg);
-  color: var(--dark-fg);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Classes d'éléments de structure */
 .mainContainer {
+  width: 100%;
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
