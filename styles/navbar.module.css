@@ -1,14 +1,26 @@
 .nav {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
-  min-height: 80px;
-  background-color: #fff;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 24px;
   margin: 0;
+  backdrop-filter: none;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.navScrolled {
+  height: 60px;
+  padding: 16px 24px;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
 }
 
 .nav::after {
@@ -21,6 +33,7 @@
   height: 1px;
   background-color: rgba(48, 48, 48, 0.2);
   box-shadow: 0 2px 4px 0.5px rgba(0, 0, 0, 0.1);
+  pointer-events: none;
 }
 
 .navList {
@@ -40,6 +53,7 @@
   color: #505050;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .link:hover {

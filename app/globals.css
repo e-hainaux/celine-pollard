@@ -15,6 +15,7 @@
 .body {
   display: flex;
   flex-direction: column;
+  margin-top: 32px;
   min-height: 100vh; /* occupe toute la hauteur */
   background: var(--light-bg);
   color: var(--light-fg);

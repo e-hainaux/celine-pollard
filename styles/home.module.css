@@ -1,51 +1,59 @@
-.container {
-  text-align: left;
-  padding: 2rem;
+.main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333333;
+  line-height: 1.6;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 1.5rem;
 }
+
 .title {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
   font-size: 2.5rem;
-  font-weight: normal;
-  margin-bottom: 1rem;
-  color: #c14e15;
-}
-
-.title span {
   font-weight: 700;
+  color: #d35400; /* orange foncé */
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.text {
-  font-size: 1.2rem;
+.highlight {
+  color: #d35400;
+  font-weight: 700;
 }
 
 .subtitle {
   font-size: 1.5rem;
-  font-weight: normal;
-}
-
-.subtitle span {
-  color: #c14e15;
-}
-
-.contactNumber {
-  margin-bottom: 24pxpx;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.orangeBoldText {
-  font-size: 1.5rem;
   font-weight: 600;
-  color: #c14e15;
+  text-align: center;
 }
 
-.orangeText {
+.contactPrompt {
   font-size: 1.5rem;
-  font-weight: normal;
-  color: #c14e15;
+  text-align: center;
+  font-weight: 500;
+}
+
+.detail {
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle,
+  .contactPrompt,
+  .detail {
+    font-size: 1rem;
+  }
 }
