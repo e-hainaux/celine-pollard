@@ -17,9 +17,9 @@
 }
 
 .navScrolled {
-  height: 60px;
+  height: 48px;
   padding: 16px 24px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
 }
 
@@ -49,14 +49,44 @@
   background-color: transparent;
 }
 
-.link {
+.link,
+.logo {
   color: #505050;
   text-decoration: none;
   font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 4px;
   transition: color 0.3s ease;
 }
 
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #c14e15;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease;
+  pointer-events: none;
+  margin-top: 4px;
+}
+
 .link:hover {
-  text-decoration: underline;
   color: #c14e15;
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+}
+
+.link.active {
+  color: #c14e15;
+}
+
+.link.active::after {
+  transform: scaleX(1);
 }
