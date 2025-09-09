@@ -7,22 +7,27 @@ export default function Navbar() {
       <ul className={styles.navList}>
         <li>
           <Link className={styles.link} href="/">
-            Accueil
+            CÉLINE POLLARD
+          </Link>
+        </li>
+        <li>
+          <Link className={styles.link} href="#">
+            LOGO
           </Link>
         </li>
         <li>
           <Link className={styles.link} href="/skills">
-            Compétences
+            COMPÉTENCES
           </Link>
         </li>
         <li>
           <Link className={styles.link} href="/fees">
-            Honoraires
+            HONORAIRES
           </Link>
         </li>
         <li>
           <Link className={styles.link} href="/contact">
-            Contact
+            CONTACT
           </Link>
         </li>
       </ul>
