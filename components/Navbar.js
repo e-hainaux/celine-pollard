@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import styles from "../styles/navbar.module.css";
@@ -33,9 +34,13 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link className={styles.logo} href="#">
-            LOGO
-          </Link>
+          <Image
+            src="/logo-avocat.webp"
+            alt="Logo Céline Pollard"
+            width={50}
+            height={50}
+            priority
+          />
         </li>
         <li>
           <Link
