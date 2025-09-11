@@ -1,10 +1,11 @@
-.page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
+/* page.module.css - remplace ton fichier existant par celui-ci */
 
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
+/* Variables & configuration générale (définies sur .page si tu l'utilises) */
+.page {
+  --text-color: #505050; /* comme ta nav */
+  --accent-color: #c14e15; /* accent nav */
+  --bg-color: #ffffff;
+  --muted-border: rgba(0, 0, 0, 0.06);
 
   display: grid;
   grid-template-rows: 20px 1fr 20px;
@@ -14,151 +15,229 @@
   padding: 80px;
   gap: 64px;
   font-family: var(--font-geist-sans);
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
-}
-
+/* --- main container (utilisé dans page.js) --- */
 .main {
+  width: 100%;
+  max-width: 980px;
   display: flex;
   flex-direction: column;
   gap: 32px;
   grid-row-start: 2;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
+/* Titres & textes */
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
   margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
+  color: var(--text-color);
 }
 
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
-}
-
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
+.subtitle {
+  font-size: 1.5rem;
   font-weight: 600;
+  margin: 18px 0 8px;
+  text-align: center;
+  color: var(--text-color);
 }
 
+.highlight {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+.detail {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  text-align: center;
+  margin: 0;
+}
+
+.contactPrompt {
+  font-weight: 600;
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+}
+
+/* Encadrés (cards) */
+.card,
+.cardAlt {
+  background: #ffffff;
+  border: 1px solid var(--muted-border);
+  padding: 32px 24px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  text-align: center;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+/* .card:hover,
+.cardAlt:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
+} */
+
+.cardAlt {
+  background: rgba(193, 78, 21, 0.03); /* très léger tint lié à l'accent */
+}
+
+/* Icônes mises en valeur (badge circulaire) */
+/* Icônes mises en valeur (badge clair avec picto orange) */
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  font-size: 28px;
+  color: #c14e15; /* icône orange */
+  background: #fff3ef; /* fond très clair, dérivé du orange */
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(193, 78, 21, 0.12);
+}
+
+/* CTA / boutons (au cas où) */
 .ctas {
   display: flex;
-  gap: 16px;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
 }
 
 .ctas a {
   appearance: none;
-  border-radius: 128px;
+  border-radius: 999px;
   height: 48px;
   padding: 0 20px;
   border: 1px solid transparent;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-  cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.18s ease;
 }
 
 a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
+  background: var(--accent-color);
+  color: white;
+}
+
+a.primary:hover {
+  transform: translateY(-2px);
 }
 
 a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 158px;
+  background: transparent;
+  border: 1px solid var(--muted-border);
+  color: var(--text-color);
 }
 
+/* Footer */
 .footer {
   grid-row-start: 3;
   display: flex;
-  gap: 24px;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  color: var(--text-color);
+  text-decoration: none;
 }
 
-.footer img {
-  flex-shrink: 0;
-}
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
-}
-
-@media (max-width: 600px) {
+/* --- Responsive — breakpoints progressifs --- */
+@media (max-width: 1024px) {
   .page {
-    padding: 32px;
-    padding-bottom: 80px;
+    padding: 60px;
+    gap: 48px;
   }
+  .title {
+    font-size: 1.9rem;
+  }
+  .subtitle {
+    font-size: 1.35rem;
+  }
+}
 
+@media (max-width: 768px) {
+  .page {
+    padding: 40px;
+    gap: 36px;
+  }
   .main {
     align-items: center;
-  }
-
-  .main ol {
     text-align: center;
   }
-
+  .title {
+    font-size: 1.7rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  .card,
+  .cardAlt {
+    padding: 24px;
+    border-radius: 12px;
+  }
+  .icon {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    padding: 10px;
+  }
   .ctas {
     flex-direction: column;
+    width: 100%;
   }
-
   .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
-  }
-
-  .footer {
-    flex-wrap: wrap;
-    align-items: center;
+    width: 100%;
     justify-content: center;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
+@media (max-width: 480px) {
+  .page {
+    padding: 20px;
+    gap: 24px;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+  .subtitle {
+    font-size: 1.05rem;
+  }
+  .detail {
+    font-size: 0.95rem;
+  }
+  .icon {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    padding: 8px;
   }
 }
