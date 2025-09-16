@@ -84,6 +84,14 @@ export default function Navbar() {
       <ul
         className={`${styles.navList} ${isMenuOpen ? styles.navListOpen : ""}`}
       >
+        <button
+          className={styles.closeButton}
+          onClick={closeMenu}
+          aria-label="Fermer le menu"
+        >
+          <span></span>
+          <span></span>
+        </button>
         <li>
           <Link
             href="/"
