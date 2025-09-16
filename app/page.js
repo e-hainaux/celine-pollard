@@ -1,56 +1,107 @@
+import { Users, MapPin, Phone, BookOpen, Search, Shield } from "lucide-react";
 import styles from "./page.module.css";
-import {
-  FaBalanceScale,
-  FaHandshake,
-  FaBuilding,
-  FaPhoneAlt,
-} from "react-icons/fa";
 
 export default function HomePage() {
   return (
     <div className={styles.main}>
-      <section className={styles.card}>
-        <div className={styles.iconWrapper}>
-          <FaHandshake className={styles.icon} />
+      {/* Section héro */}
+      <section className={styles.heroSection}>
+        <div className={styles.heroContent}>
+          <h1 className={styles.title}>
+            L'expérience et les compétences
+            <span className={styles.highlight}>
+              au service exclusif de vos intérêts
+            </span>
+          </h1>
+          <p className={styles.subtitle}>
+            Selarl Debarbieux Pollard, société d'avocats en droit privé à Arras.
+          </p>
         </div>
-        <h1 className={styles.title}>
-          L’EXPERIENCE ET LES COMPETENCES
-          <br />
-          <span className={styles.highlight}>
-            AU SERVICE EXCLUSIF DE VOS INTERETS
-          </span>
-        </h1>
-        <p className={styles.detail}>
-          Selarl Debarbieux Pollard, société d’avocats en droit privé à Arras.
-        </p>
       </section>
 
-      <section className={styles.cardAlt}>
-        <div className={styles.iconWrapper}>
-          <FaBalanceScale className={styles.icon} />
+      {/* Section services */}
+      <section className={styles.servicesSection}>
+        <div className={styles.servicesCard}>
+          <Users className={styles.icon} size={32} />
+          <p className={styles.servicesText}>
+            Un accompagnement soigné et personnalisé en droit des contrats,
+            droit de l'immobilier et de la construction, droit commercial et
+            responsabilité civile dans les Hauts de France.
+          </p>
         </div>
-        <h2 className={styles.subtitle}>
-          Une problématique à résoudre ou un projet à réaliser ?
-        </h2>
-        <p className={styles.detail}>
-          <span className={styles.highlight}>
-            Une rencontre vaudra toujours mieux qu’une longue publication.
-          </span>
-        </p>
-        <p className={styles.contactPrompt}>
-          <FaPhoneAlt /> Prenez rendez-vous :{" "}
-          <strong className={styles.highlight}>03 21 71 98 60</strong>
-        </p>
       </section>
 
-      <section className={styles.card}>
-        <div className={styles.iconWrapper}>
-          <FaBuilding className={styles.icon} />
+      {/* Section contact */}
+      <section className={styles.contactSection}>
+        <div className={styles.contactCard}>
+          <h2 className={styles.sectionTitle}>
+            Une problématique à résoudre ou un projet à réaliser ?
+          </h2>
+          <p className={styles.contactHighlight}>
+            Une rencontre vaudra toujours mieux qu'une longue publication.
+          </p>
+          <div className={styles.contactInfo}>
+            <Phone className={styles.phoneIcon} size={24} />
+            <div>
+              <p className={styles.contactText}>Prenez rendez-vous</p>
+              <p className={styles.phoneNumber}>03 21 71 98 60</p>
+            </div>
+          </div>
         </div>
-        <p className={styles.detail}>
-          Le CABINET DEBARBIEUX POLLARD vous accueille dans ses nouveaux locaux
-          situés au <strong>12 Boulevard Vauban à Arras</strong>.
-        </p>
+      </section>
+
+      {/* Section expertise */}
+      <section className={styles.expertiseSection}>
+        <div className={styles.expertiseGrid}>
+          <div className={styles.expertiseCard}>
+            <BookOpen className={styles.icon} size={28} />
+            <p className={styles.expertiseText}>
+              Une expérience et un savoir-faire sans cesse mis en avant et la
+              volonté de perpétuer une réputation basée sur le sérieux des
+              compétences.
+            </p>
+          </div>
+          <div className={styles.expertiseCard}>
+            <Search className={styles.icon} size={28} />
+            <p className={styles.expertiseText}>
+              En matière de contrat, rien n'échappe à notre vigilance.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section cabinet */}
+      <section className={styles.cabinetSection}>
+        <div className={styles.cabinetCard}>
+          <MapPin className={styles.icon} size={32} />
+          <div className={styles.cabinetContent}>
+            <h3 className={styles.cabinetTitle}>Notre Cabinet</h3>
+            <p className={styles.cabinetText}>
+              Le CABINET DEBARBIEUX POLLARD vous accueille dans ses nouveaux
+              locaux situés au 12 Boulevard Vauban à Arras.
+            </p>
+            <p className={styles.cabinetText}>
+              Vous y serez accueillis par Maître Céline POLLARD, titulaire d'un
+              Master 2, spécialités notariales et judiciaires, obtenu à
+              l'Université Catholique de Lille.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section objectif */}
+      <section className={styles.objectiveSection}>
+        <div className={styles.objectiveCard}>
+          <Shield className={styles.icon} size={32} />
+          <div className={styles.objectiveContent}>
+            <p className={styles.objectiveText}>
+              La Selarl Debarbieux Pollard sera votre soutien infaillible.
+            </p>
+            <p className={styles.objectiveHighlight}>
+              Notre objectif : servir et défendre vos intérêts.
+            </p>
+          </div>
+        </div>
       </section>
     </div>
   );

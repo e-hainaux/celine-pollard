@@ -1,243 +1,285 @@
-/* page.module.css - remplace ton fichier existant par celui-ci */
-
-/* Variables & configuration générale (définies sur .page si tu l'utilises) */
-.page {
-  --text-color: #505050; /* comme ta nav */
-  --accent-color: #c14e15; /* accent nav */
-  --bg-color: #ffffff;
-  --muted-border: rgba(0, 0, 0, 0.06);
-
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
-  color: var(--text-color);
-  background-color: var(--bg-color);
-}
-
-/* --- main container (utilisé dans page.js) --- */
+/* Container principal */
 .main {
-  width: 100%;
-  max-width: 980px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 120px 2rem 4rem;
+  line-height: 1.6;
+  color: #333;
 }
 
-/* Titres & textes */
-.title {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.2;
+/* Section héro */
+.heroSection {
   text-align: center;
-  margin: 0;
-  color: var(--text-color);
+  margin-bottom: 4rem;
+  padding: 3rem 0;
+  background: linear-gradient(
+    135deg,
+    rgba(193, 78, 21, 0.05),
+    rgba(255, 255, 255, 0.1)
+  );
+  border-radius: 16px;
+  border: 1px solid rgba(193, 78, 21, 0.1);
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.title .highlight {
+  display: block;
+  color: #c14e15;
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  font-weight: 600;
 }
 
 .subtitle {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin: 18px 0 8px;
-  text-align: center;
-  color: var(--text-color);
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 0;
+  font-weight: 400;
 }
 
-.highlight {
-  color: var(--accent-color);
-  font-weight: 700;
+/* Section services */
+.servicesSection {
+  margin-bottom: 3rem;
 }
 
-.detail {
+.servicesCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.servicesText {
   font-size: 1rem;
+  color: #555;
+  margin: 0;
   line-height: 1.6;
-  color: var(--text-color);
+}
+
+/* Section contact */
+.contactSection {
+  margin-bottom: 3rem;
+}
+
+.contactCard {
+  background: linear-gradient(135deg, #c14e15, #d4661f);
+  color: white;
+  border-radius: 16px;
+  padding: 2.5rem;
   text-align: center;
+  box-shadow: 0 8px 24px rgba(193, 78, 21, 0.3);
+}
+
+.sectionTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.contactHighlight {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+  opacity: 0.95;
+}
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.contactText {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.phoneNumber {
+  font-size: 1.3rem;
+  font-weight: 700;
   margin: 0;
 }
 
-.contactPrompt {
-  font-weight: 600;
-  margin-top: 12px;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-color);
+.phoneIcon {
+  flex-shrink: 0;
 }
 
-/* Encadrés (cards) */
-.card,
-.cardAlt {
-  background: #ffffff;
-  border: 1px solid var(--muted-border);
-  padding: 32px 24px;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+/* Section expertise */
+.expertiseSection {
+  margin-bottom: 3rem;
+}
+
+.expertiseGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.expertiseCard {
+  background: rgba(248, 250, 252, 0.8);
+  border: 1px solid rgba(193, 78, 21, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.expertiseText {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* Section cabinet */
+.cabinetSection {
+  margin-bottom: 3rem;
+}
+
+.cabinetCard {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(193, 78, 21, 0.2);
+  border-radius: 16px;
+  padding: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.cabinetTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #c14e15;
+  margin-bottom: 1rem;
+}
+
+.cabinetText {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.cabinetText:last-child {
+  margin-bottom: 0;
+}
+
+/* Section objectif */
+.objectiveSection {
+  margin-bottom: 2rem;
+}
+
+.objectiveCard {
+  background: linear-gradient(
+    135deg,
+    rgba(193, 78, 21, 0.08),
+    rgba(255, 255, 255, 0.5)
+  );
+  border: 1px solid rgba(193, 78, 21, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
   text-align: center;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
-/* .card:hover,
-.cardAlt:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
-} */
-
-.cardAlt {
-  background: rgba(193, 78, 21, 0.03); /* très léger tint lié à l'accent */
+.objectiveText {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
 }
 
-/* Icônes mises en valeur (badge circulaire) */
-/* Icônes mises en valeur (badge clair avec picto orange) */
-.iconWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 14px;
-}
-
-.icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-  font-size: 28px;
-  color: #c14e15; /* icône orange */
-  background: #fff3ef; /* fond très clair, dérivé du orange */
-  border-radius: 50%;
-  padding: 12px;
-  box-shadow: 0 6px 18px rgba(193, 78, 21, 0.12);
-}
-
-/* CTA / boutons (au cas où) */
-.ctas {
-  display: flex;
-  gap: 14px;
-  justify-content: center;
-  align-items: center;
-}
-
-.ctas a {
-  appearance: none;
-  border-radius: 999px;
-  height: 48px;
-  padding: 0 20px;
-  border: 1px solid transparent;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
+.objectiveHighlight {
+  font-size: 1.2rem;
   font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.18s ease;
+  color: #c14e15;
+  margin: 0;
 }
 
-a.primary {
-  background: var(--accent-color);
-  color: white;
+/* Icônes */
+.icon {
+  color: #c14e15;
+  flex-shrink: 0;
 }
 
-a.primary:hover {
-  transform: translateY(-2px);
-}
-
-a.secondary {
-  background: transparent;
-  border: 1px solid var(--muted-border);
-  color: var(--text-color);
-}
-
-/* Footer */
-.footer {
-  grid-row-start: 3;
-  display: flex;
-  gap: 18px;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer a {
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-/* --- Responsive — breakpoints progressifs --- */
-@media (max-width: 1024px) {
-  .page {
-    padding: 60px;
-    gap: 48px;
-  }
-  .title {
-    font-size: 1.9rem;
-  }
-  .subtitle {
-    font-size: 1.35rem;
-  }
-}
-
+/* Responsive */
 @media (max-width: 768px) {
-  .page {
-    padding: 40px;
-    gap: 36px;
-  }
   .main {
-    align-items: center;
-    text-align: center;
+    padding: 100px 1rem 2rem;
   }
+
   .title {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
-  .subtitle {
-    font-size: 1.2rem;
+
+  .title .highlight {
+    font-size: 1.6rem;
   }
-  .card,
-  .cardAlt {
-    padding: 24px;
-    border-radius: 12px;
+
+  .expertiseGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
-  .icon {
-    width: 56px;
-    height: 56px;
-    font-size: 24px;
-    padding: 10px;
-  }
-  .ctas {
+
+  .servicesCard,
+  .expertiseCard,
+  .cabinetCard,
+  .objectiveCard {
     flex-direction: column;
-    width: 100%;
+    text-align: center;
+    gap: 1rem;
   }
-  .ctas a {
-    width: 100%;
-    justify-content: center;
+
+  .contactInfo {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .heroSection,
+  .contactCard,
+  .cabinetCard {
+    padding: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 480px) {
-  .page {
-    padding: 20px;
-    gap: 24px;
-  }
   .title {
+    font-size: 1.5rem;
+  }
+
+  .title .highlight {
     font-size: 1.4rem;
   }
-  .subtitle {
-    font-size: 1.05rem;
-  }
-  .detail {
-    font-size: 0.95rem;
-  }
-  .icon {
-    width: 48px;
-    height: 48px;
-    font-size: 20px;
-    padding: 8px;
+
+  .heroSection,
+  .contactCard {
+    padding: 1.5rem;
   }
 }
