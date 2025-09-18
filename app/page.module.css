@@ -60,25 +60,53 @@
 }
 
 .servicesCard {
-  max-width: 800px;
-
+  max-width: 1200px;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  justify-content: space-between;
+  gap: 3rem;
   padding: 1rem 0;
 }
+
+/* Container pour l'image avec effet de fondu */
+.servicesCard > div:first-child {
+  position: relative;
+  display: inline-block;
+}
+
 .servicesCard img {
   width: auto;
   height: auto;
   max-width: 100%;
-  height: auto;
   object-fit: cover;
 }
+
+/* Effet de fondu sur la droite - uniquement sur grand écran */
+@media (min-width: 769px) {
+  .servicesCard > div:first-child::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.2) 80%,
+      rgba(255, 255, 255, 0.9) 100%
+    );
+    pointer-events: none;
+  }
+  .servicesCard img {
+    border-radius: 0px 0 0 24px;
+  }
+}
+
 .servicesText {
   font-size: 1rem;
   color: #555;
   margin: 0;
-
   line-height: 1.6;
 }
 
@@ -287,6 +315,8 @@
     max-width: 100%;
     height: auto;
     object-fit: cover;
+
+    border-radius: 2px;
   }
   .contactInfo {
     flex-direction: column;
@@ -323,6 +353,6 @@
     max-width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 8px; /* coins arrondis optionnels */
+    /* border-radius: 8px; */
   }
 }
