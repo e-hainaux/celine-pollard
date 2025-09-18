@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Users, MapPin, Phone, BookOpen, Search, Shield } from "lucide-react";
 import styles from "./page.module.css";
 
@@ -22,7 +23,15 @@ export default function HomePage() {
       {/* Section services */}
       <section className={styles.servicesSection}>
         <div className={styles.servicesCard}>
-          <Users className={styles.icon} size={32} />
+          {/* <Users className={styles.icon} size={32} /> */}
+          <div>
+            <Image
+              src="/celine-black-totheright.jpg"
+              width={429}
+              height={500}
+              alt="Photographie de Céline Pollard"
+            />
+          </div>
           <p className={styles.servicesText}>
             Un accompagnement soigné et personnalisé en droit des contrats,
             droit de l'immobilier et de la construction, droit commercial et
