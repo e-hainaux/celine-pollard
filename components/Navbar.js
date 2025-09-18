@@ -59,10 +59,10 @@ export default function Navbar() {
       <div className={styles.navHeader}>
         <Link href="/" className={styles.logoContainer} onClick={closeMenu}>
           <Image
-            src="/logo-avocat.webp"
+            src="/logo-p.svg"
             alt="Logo Céline Pollard"
-            width={40}
-            height={40}
+            width={72}
+            height={72}
             priority
           />
         </Link>
@@ -103,10 +103,10 @@ export default function Navbar() {
         </li>
         <li className={styles.logoDesktop}>
           <Image
-            src="/logo-avocat.webp"
+            src="/logo-p.svg"
             alt="Logo Céline Pollard"
-            width={48}
-            height={48}
+            width={104}
+            height={104}
             priority
           />
         </li>
