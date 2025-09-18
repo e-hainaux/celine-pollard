@@ -7,6 +7,9 @@ export default function HomePage() {
     <div className={styles.main}>
       {/* Section héro */}
       <section className={styles.heroSection}>
+        <video autoPlay muted loop playsInline>
+          <source src="/video/video-test.mp4" type="video/mp4" />
+        </video>
         <div className={styles.heroContent}>
           <h1 className={styles.title}>
             L'expérience et les compétences
