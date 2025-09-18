@@ -146,6 +146,10 @@
   transform: rotate(-45deg) translate(7px, -6px);
 }
 
+.closeButton {
+  display: none;
+}
+
 .overlay {
   display: none;
   position: fixed;
