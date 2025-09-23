@@ -1,13 +1,176 @@
 .container {
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2rem 1rem;
+  padding: 2rem 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333333;
+  line-height: 1.6;
+  background-color: #fff;
+  border-radius: 8px;
 }
 
 .title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d35400;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contactInfo {
+  max-width: 650px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.phoneSection {
+  text-align: center;
+}
+
+.phoneContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.phoneIcon {
+  color: #d35400;
+  width: 2rem;
+  height: 2rem;
+}
+
+.phone {
   font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #2980b9;
+  font-weight: 700;
+  color: #d35400;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.hoursSection {
+  text-align: center;
 }
 
 .text {
-  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  margin: 0 auto 1rem auto;
+  text-align: center;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.highlight {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #d35400;
+  margin: 0 auto 1rem auto;
+  text-align: center;
+}
+
+.hours {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #d35400;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.emailSection {
+  text-align: center;
+}
+
+.email {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #d35400;
+  text-decoration: none;
+  border: 2px solid #d35400;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.email:hover {
+  background-color: #d35400;
+  color: #fff;
+}
+
+.onlineSection {
+  text-align: center;
+  width: 100%;
+}
+
+.meetlawSection {
+  margin-top: 1rem;
+}
+
+.meetlawLink {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.meetlawLink:hover {
+  transform: scale(1.02);
+}
+
+.meetlawImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 1rem 0.5rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .phoneContainer {
+    gap: 0.6rem;
+  }
+
+  .phoneIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .phone {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .text,
+  .highlight {
+    font-size: 1rem;
+  }
+
+  .hours {
+    font-size: 1.1rem;
+  }
+
+  .email {
+    font-size: 1.1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .contactInfo {
+    gap: 1.5rem;
+  }
 }
