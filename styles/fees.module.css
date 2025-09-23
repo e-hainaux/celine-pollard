@@ -1,15 +1,75 @@
 .container {
-  padding: 2rem;
-  background-color: #f4f6f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2rem 1rem;
+  padding: 2rem 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333333;
+  line-height: 1.6;
+  background-color: #fff;
   border-radius: 8px;
 }
 
+.post {
+  max-width: 650px;
+  width: 100%;
+}
+
 .title {
-  color: #8e44ad;
-  margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d35400; /* orange foncé */
+  margin-bottom: 2rem;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.content {
+  width: 100%;
 }
 
 .text {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  margin: 0 auto 1.5rem auto;
+  text-align: left;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.text:last-child {
+  margin-bottom: 0;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+/* Style pour mettre en évidence certains éléments si nécessaire */
+.highlight {
+  color: #d35400;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 1rem 0.5rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
 }
