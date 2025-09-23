@@ -48,8 +48,8 @@
   gap: 1.2rem;
 }
 
-.domainItem {
-  background-color: #fdece6; /* très clair orange */
+/* .domainItem {
+  background-color: #fdece6;
   color: #d35400;
   font-weight: 600;
   font-size: 1.1rem;
@@ -62,6 +62,17 @@
 .domainItem:hover {
   background-color: #d35400;
   color: #fff;
+  cursor: default;
+} */
+
+.domainItem {
+  background-color: #d35400;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(211, 84, 0, 0.15);
   cursor: default;
 }
 
