@@ -6,8 +6,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <p className={styles.text}>
-        &copy; {new Date().getFullYear()} Mon Site Vitrine. Tous droits
-        réservés.
+        &copy; {new Date().getFullYear()} ehweb.fr - Tous droits réservés.
       </p>
       <p className={styles.text}>
         <Link className={styles.link} href="/legal">
