@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../../styles/fees.module.css";
 
 export default function FeesPage() {
@@ -11,7 +12,9 @@ export default function FeesPage() {
             La détermination des frais et des honoraires, ainsi que leurs
             modalités de règlement, sont discutées avec Maître Céline Pollard{" "}
             <span className={styles.underlined}>
-              dès le premier rendez-vous.
+              <Link href="/contact" className={styles.link}>
+                dès le premier rendez-vous.
+              </Link>
             </span>
           </p>
 

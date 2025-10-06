@@ -51,8 +51,13 @@
 .underlined {
   text-decoration: underline;
 }
+.link {
+  color: #333333;
+}
+.link:hover {
+  color: #c14e15;
+}
 
-/* Style pour mettre en évidence certains éléments si nécessaire */
 .highlight {
   color: #d35400;
   font-weight: 700;
