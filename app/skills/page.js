@@ -17,12 +17,12 @@ export default function SkillsPage() {
 
       <ul className={styles.domainsList}>
         <li className={styles.domainItem}>Droit des contrats</li>
+        <li className={styles.domainItem}>Recouvrement de créances</li>
+        <li className={styles.domainItem}>Droit commercial</li>
+        <li className={styles.domainItem}>Responsabilité civile</li>
         <li className={styles.domainItem}>
           Droit immobilier et de la construction
         </li>
-        <li className={styles.domainItem}>Droit commercial</li>
-        <li className={styles.domainItem}>Responsabilité civile</li>
-        <li className={styles.domainItem}>Recouvrement de créances</li>
       </ul>
 
       <p className={styles.contactPrompt}>
