@@ -34,7 +34,7 @@ export default function ContactPage() {
           </p>
           <div className={styles.meetlawSection}>
             <a
-              href="https://rdv.meetlaw.fr"
+              href="https://rdv.meetlaw.fr/rdv/7360-cabinet-debarbieux-pollard"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.meetlawLink}
