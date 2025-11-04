@@ -94,8 +94,8 @@ export default function HomePage() {
             <div className={styles.mobilePicture}>
               <Image
                 src="/cabinet-celine-outside-1.jpg"
-                width={250}
-                height={250}
+                width={300}
+                height={400}
                 alt="Photographie de Céline Pollard"
               />
             </div>

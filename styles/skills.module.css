@@ -95,12 +95,17 @@
   text-align: center;
 }
 .mainPicture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   height: auto;
+  margin: 1rem 0;
 }
 
 .mainPicture img {
   width: 100%;
+  max-width: 500px;
   height: auto;
   border-radius: 8px;
 }
@@ -137,5 +142,9 @@
   .detail,
   .emphasis {
     font-size: 1rem;
+  }
+
+  .cabinetCard {
+    margin: 0;
   }
 }
