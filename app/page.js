@@ -30,8 +30,7 @@ export default function HomePage() {
           <div>
             <Image
               src="/celine-black-totheright.jpg"
-              width={429}
-              height={500}
+              fill
               alt="Photographie de Céline Pollard"
             />
           </div>
@@ -92,6 +91,14 @@ export default function HomePage() {
               Le CABINET DEBARBIEUX POLLARD vous accueille dans ses nouveaux
               locaux situés au 12 Boulevard Vauban à Arras.
             </p>
+            <div className={styles.mobilePicture}>
+              <Image
+                src="/cabinet-celine-outside-1.jpg"
+                width={250}
+                height={250}
+                alt="Photographie de Céline Pollard"
+              />
+            </div>
             <p className={styles.cabinetText}>
               Vous y serez accueillis par Maître Céline POLLARD, titulaire d'un
               Master 2, spécialités notariales et judiciaires, obtenu à

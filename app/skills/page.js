@@ -1,4 +1,5 @@
 import styles from "../../styles/skills.module.css";
+import Image from "next/image";
 
 export default function SkillsPage() {
   return (
@@ -38,7 +39,14 @@ export default function SkillsPage() {
         solutions concrètes et vous accompagner dans toutes vos démarches et en
         dehors même de tout contentieux.
       </p>
-
+      <div className={styles.mainPicture}>
+        <Image
+          src="/celine-white-atdesk.jpg"
+          width={460}
+          height={500}
+          alt="Photographie de Céline Pollard"
+        />
+      </div>
       <p className={styles.emphasis}>
         <em>N’attendez pas le procès pour nous consulter.</em>
       </p>

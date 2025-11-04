@@ -265,6 +265,16 @@
   margin-bottom: 0;
 }
 
+.mobilePicture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobilePicture img {
+  border-radius: 8px;
+}
+
 /* Section objectif */
 .objectiveSection {
   margin-bottom: 2rem;
@@ -352,6 +362,16 @@
   .contactCard,
   .cabinetCard {
     padding: 2rem;
+  }
+
+  .mobilePicture {
+    display: flex;
+    margin: 1rem 0;
+  }
+
+  .mobilePicture img {
+    border-radius: 8px;
+    object-fit: cover;
   }
 
   .sectionTitle {

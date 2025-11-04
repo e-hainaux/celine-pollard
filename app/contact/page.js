@@ -1,4 +1,5 @@
 import styles from "../../styles/contact.module.css";
+import Image from "next/image";
 import { Phone } from "lucide-react";
 
 export default function ContactPage() {
@@ -45,6 +46,14 @@ export default function ContactPage() {
                 className={styles.meetlawImage}
               />
             </a>
+          </div>
+          <div className={styles.mainPicture}>
+            <Image
+              src="/celine-white-meeting.jpg"
+              width={300}
+              height={225}
+              alt="Photographie de Céline Pollard"
+            />
           </div>
         </div>
       </div>
