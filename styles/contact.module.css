@@ -133,7 +133,7 @@
 
 @media (max-width: 600px) {
   .container {
-    margin: 1rem 0.5rem;
+    margin: 1rem 0rem;
     padding: 1.5rem 1rem;
   }
 

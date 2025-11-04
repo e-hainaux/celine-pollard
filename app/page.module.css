@@ -368,7 +368,14 @@
     font-size: 1.4rem;
   }
 
-  .heroSection,
+  .heroSection {
+    padding: 0;
+  }
+
+  .heroContent {
+    padding: 0.5rem;
+  }
+
   .contactCard {
     padding: 1.5rem;
   }
