@@ -15,7 +15,7 @@
 .title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #d35400; /* orange foncé */
+  color: #d35400;
   margin-bottom: 1rem;
   text-align: center;
   text-transform: uppercase;
@@ -24,7 +24,7 @@
 
 .keywords {
   font-weight: 600;
-  color: #d35400; /* orange foncé */
+  color: #d35400;
   text-align: center;
   margin: 1rem 0 2rem 0;
   font-size: 1rem;
@@ -112,7 +112,7 @@
 
 .emphasis {
   font-style: italic;
-  color: #7a4a02; /* légèrement plus foncé */
+  color: #7a4a02;
   text-align: center;
   max-width: 650px;
   margin: 0 auto 1.25rem auto;
