@@ -1,4 +1,4 @@
-import styles from "../../styles/skills.module.css";
+import styles from "./skills.module.css";
 import Image from "next/image";
 
 export default function SkillsPage() {

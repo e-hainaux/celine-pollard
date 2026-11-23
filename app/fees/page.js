@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../../styles/fees.module.css";
+import styles from "./fees.module.css";
 
 export default function FeesPage() {
   return (

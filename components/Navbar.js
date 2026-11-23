@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import styles from "../styles/navbar.module.css";
+import styles from "./navbar.module.css";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);

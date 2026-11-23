@@ -1,4 +1,4 @@
-import styles from "../../styles/contact.module.css";
+import styles from "./contact.module.css";
 import Image from "next/image";
 import { Phone } from "lucide-react";
 
