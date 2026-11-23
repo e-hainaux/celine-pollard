@@ -7,9 +7,9 @@
   margin: 2rem 1rem;
   padding: 2rem 1.5rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #333333;
+  color: var(--dark-grey-txt);
   line-height: 1.6;
-  background-color: #fff;
+  background-color: var(--light-bg);
   border-radius: 8px;
 }
 
@@ -21,7 +21,7 @@
 .title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #d35400; /* orange foncé */
+  color: var(--bright-orange-txt);
   margin-bottom: 2rem;
   text-align: left;
   text-transform: uppercase;
@@ -36,7 +36,7 @@
   font-size: 1.1rem;
   margin: 0 auto 1.5rem auto;
   text-align: left;
-  color: #333333;
+  color: var(--dark-grey-txt);
   line-height: 1.6;
 }
 
@@ -52,16 +52,16 @@
   text-decoration: underline;
 }
 .link {
-  color: #333333;
+  color: var(--dark-grey-txt);
 }
 .link:hover {
-  color: #c14e15;
+  color: var(--burnt-orange-txt);
 }
 
-.highlight {
-  color: #d35400;
+/* .highlight {
+  color: var(--bright-orange-txt);
   font-weight: 700;
-}
+} */
 
 @media (max-width: 600px) {
   .container {
