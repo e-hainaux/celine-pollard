@@ -7,16 +7,16 @@
   margin: 2rem 1rem;
   padding: 2rem 1.5rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #333333;
+  color: var(--dark-grey-txt);
   line-height: 1.6;
-  background-color: #fff;
+  background-color: var(--light-bg);
   border-radius: 8px;
 }
 
 .title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #d35400;
+  color: var(--bright-orange-txt);
   margin-bottom: 2rem;
   text-align: center;
   text-transform: uppercase;
@@ -44,7 +44,7 @@
 }
 
 .phoneIcon {
-  color: #d35400;
+  color: var(--bright-orange-txt);
   width: 2rem;
   height: 2rem;
 }
@@ -52,7 +52,7 @@
 .phone {
   font-size: 2rem;
   font-weight: 700;
-  color: #d35400;
+  color: var(--bright-orange-txt);
   margin: 0;
   letter-spacing: 2px;
 }
@@ -72,7 +72,7 @@
 .highlight {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #d35400;
+  color: var(--bright-orange-txt);
   margin: 0 auto 1rem auto;
   text-align: center;
 }
@@ -80,7 +80,7 @@
 .hours {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #d35400;
+  color: var(--bright-orange-txt);
   margin: 0;
   text-align: center;
   letter-spacing: 1px;
@@ -93,9 +93,9 @@
 .email {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #d35400;
+  color: var(--bright-orange-txt);
   text-decoration: none;
-  border: 2px solid #d35400;
+  border: 2px solid var(--bright-orange-txt);
   padding: 0.8rem 1.5rem;
   border-radius: 25px;
   transition: all 0.3s ease;
@@ -103,8 +103,8 @@
 }
 
 .email:hover {
-  background-color: #d35400;
-  color: #fff;
+  background-color: var(--bright-orange-bg);
+  color: var(--white-txt);
 }
 
 .onlineSection {
