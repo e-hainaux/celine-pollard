@@ -208,12 +208,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  justify-content: space-between;
 }
 
 .expertiseCard {
   background: rgba(248, 250, 252, 0.8);
   border: 1px solid rgba(193, 78, 21, 0.1);
   border-radius: 12px;
+  max-width: 628px;
   padding: 2rem;
   display: flex;
   align-items: center;
