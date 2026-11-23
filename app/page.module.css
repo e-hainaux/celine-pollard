@@ -237,42 +237,68 @@
 }
 
 .cabinetCard {
-  background: rgba(255, 255, 255, 0.9);
-  border: 2px solid rgba(193, 78, 21, 0.2);
-  border-radius: 16px;
-  padding: 2.5rem;
-  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(193, 78, 21, 0.18);
+  border-radius: 20px;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
   align-items: center;
-  gap: 2rem;
-  /* box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08); */
+  gap: 3rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Partie texte */
+.cabinetContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .cabinetTitle {
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.7rem;
+  font-weight: 700;
   color: #c14e15;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .cabinetText {
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: #555;
-  margin-bottom: 1rem;
-  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  line-height: 1.8;
 }
 
 .cabinetText:last-child {
   margin-bottom: 0;
 }
 
+/* Image */
 .mobilePicture {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  overflow: hidden;
+  border-radius: 14px;
 }
 
 .mobilePicture img {
-  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* Icône */
+.icon {
+  color: #c14e15;
+  flex-shrink: 0;
 }
 
 /* Section objectif */
@@ -376,6 +402,48 @@
 
   .sectionTitle {
     font-size: 1.2rem;
+  }
+
+  .cabinetSection {
+    padding: 2rem;
+  }
+
+  .cabinetCard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+  }
+
+  .cabinetContent {
+    align-items: center;
+  }
+
+  .cabinetTitle {
+    font-size: 1.3rem;
+    margin: 0.5rem 0 1rem;
+  }
+
+  .cabinetText {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .mobilePicture {
+    display: flex;
+    margin: 1rem 0;
+    min-height: auto;
+    height: auto;
+  }
+
+  .mobilePicture img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    min-height: auto;
+    object-fit: cover;
+    border-radius: 8px;
   }
 }
 

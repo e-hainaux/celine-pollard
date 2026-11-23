@@ -84,26 +84,30 @@ export default function HomePage() {
       {/* Section cabinet */}
       <section className={styles.cabinetSection}>
         <div className={styles.cabinetCard}>
-          <MapPin className={styles.icon} size={32} />
           <div className={styles.cabinetContent}>
+            <MapPin className={styles.icon} size={32} />
+
             <h3 className={styles.cabinetTitle}>Notre Cabinet</h3>
+
             <p className={styles.cabinetText}>
               Le CABINET DEBARBIEUX POLLARD vous accueille dans ses nouveaux
               locaux situés au 12 Boulevard Vauban à Arras.
             </p>
-            <div className={styles.mobilePicture}>
-              <Image
-                src="/cabinet-celine-outside-1.jpg"
-                width={300}
-                height={400}
-                alt="Photographie de Céline Pollard"
-              />
-            </div>
+
             <p className={styles.cabinetText}>
               Vous y serez accueillis par Maître Céline POLLARD, titulaire d'un
               Master 2, spécialités notariales et judiciaires, obtenu à
               l'Université Catholique de Lille.
             </p>
+          </div>
+
+          <div className={styles.mobilePicture}>
+            <Image
+              src="/cabinet-celine-outside-1.jpg"
+              width={600}
+              height={750}
+              alt="Photographie du cabinet de Maître Céline Pollard"
+            />
           </div>
         </div>
       </section>
