@@ -7,15 +7,15 @@
   margin: 2rem 1rem;
   padding: 0 1.5rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #333333;
+  color: var(--dark-grey-txt);
   line-height: 1.6;
-  background-color: #fff;
+  background-color: var(--light-bg);
 }
 
 .title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #d35400;
+  color: var(--bright-orange-txt);
   margin-bottom: 1rem;
   text-align: center;
   text-transform: uppercase;
@@ -24,7 +24,7 @@
 
 .keywords {
   font-weight: 600;
-  color: #d35400;
+  color: var(--bright-orange-txt);
   text-align: center;
   margin: 1rem 0 2rem 0;
   font-size: 1rem;
@@ -48,26 +48,9 @@
   gap: 1.2rem;
 }
 
-/* .domainItem {
-  background-color: #fdece6;
-  color: #d35400;
-  font-weight: 600;
-  font-size: 1.1rem;
-  padding: 0.6rem 1.2rem;
-  border-radius: 20px;
-  box-shadow: 0 2px 8px rgba(211, 84, 0, 0.15);
-  transition: background-color 0.3s ease;
-}
-
-.domainItem:hover {
-  background-color: #d35400;
-  color: #fff;
-  cursor: default;
-} */
-
 .domainItem {
-  background-color: #d35400;
-  color: #fff;
+  background-color: var(--bright-orange-bg);
+  color: var(--white-txt);
   font-weight: 600;
   font-size: 1.1rem;
   padding: 0.6rem 1.2rem;
@@ -84,7 +67,7 @@
 }
 
 .highlight {
-  color: #d35400;
+  color: var(--bright-orange-txt);
   font-weight: 700;
 }
 
@@ -112,7 +95,7 @@
 
 .emphasis {
   font-style: italic;
-  color: #7a4a02;
+  color: var(--golden-brown-txt);
   text-align: center;
   max-width: 650px;
   margin: 0 auto 1.25rem auto;
