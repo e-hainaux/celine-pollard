@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function SkillsPage() {
   return (
-    <main className={styles.main}>
+    <main className={styles.container}>
       <h1 className={styles.title}>Compétences</h1>
 
       <p className={styles.keywords}>
