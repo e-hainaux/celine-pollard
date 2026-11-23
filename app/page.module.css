@@ -1,6 +1,9 @@
 /* Container principal */
 .main {
-  /* max-width: 1200px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   padding: 0 0 4rem;
   line-height: 1.6;
@@ -139,7 +142,8 @@
 
 /* Section contact */
 .contactSection {
-  width: 100%;
+  width: 100vw;
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   margin-bottom: 3rem;
