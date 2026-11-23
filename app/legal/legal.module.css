@@ -8,8 +8,10 @@
 .title {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  color: var(--golden-brown-txt);
 }
 
 .text {
   line-height: 1.6;
+  color: var(--dark-grey-txt);
 }
